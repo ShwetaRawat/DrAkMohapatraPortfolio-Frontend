@@ -1,0 +1,61 @@
+:root {
+  --primary-color: #27AE60;/* Blue */
+  --secondary-color: hsl(145, 63%, 49%); /* Green */
+  --background-color: #4b4f50; /* Light Grey */
+  --border-color: #bdc3c7; /* Silver */
+}
+
+body {
+  background-color: #191d2b;
+}
+
+/* Apply color scheme */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  border: 1px solid var(--border-color);
+  padding: 12px;
+  text-align: left;
+}
+/* Apply color and size to table content */
+td {
+  color: white; /* Text color */
+  font-size: 20px; /* Font size */
+}
+
+
+th {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+
+
+#searchBox {
+  width: 20%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+
+.main-title {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+}
+
+/* Adjust width of Title and Author(s) columns */
+th:nth-child(1), /* Title column */
+th:nth-child(2) { /* Author(s) column */
+  width: 100%; /* Adjust width as needed */
+}
+
+
+

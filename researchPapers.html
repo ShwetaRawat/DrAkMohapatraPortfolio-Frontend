@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesResearch.css" />
+    <title>Research Papers</title>
+  </head>
+  <body>
+    <div class="main-title"><h1>Here are all my Research Papers:</h1></div>
+    <br></br>
+    <input type="text" id="searchBox" onkeyup="searchTable()" placeholder="Search for titles.." />
+    <table id="myTable">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author(s)</th>
+          <th>Journal/Conference</th>
+          <th>Volume/Issue/Pages</th>
+          <th>Publication Year</th>
+          <th>Citation Count</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <!-- Table data will be inserted here -->
+      </tbody>
+    </table>
+    <script src="scriptResearch.js"></script>
+  </body>
+</html>
