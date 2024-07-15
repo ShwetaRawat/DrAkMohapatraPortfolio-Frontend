@@ -1,15 +1,35 @@
+// (function () {
+//     [...document.querySelectorAll(".control")].forEach(button => {
+//         button.addEventListener("click", function() {
+//             document.querySelector(".active-btn").classList.remove("active-btn");
+//             this.classList.add("active-btn");
+//             document.querySelector(".active").classList.remove("active");
+//             document.getElementById(button.dataset.id).classList.add("active");
+//         })
+//     });
+//     document.querySelector(".theme-btn").addEventListener("click", () => {
+//         document.body.classList.toggle("light-mode");
+//     })
+// })();
+
+
 (function () {
     [...document.querySelectorAll(".control")].forEach(button => {
         button.addEventListener("click", function() {
+            if (button.dataset.id === 'blogs') {
+                window.location.href = 'researchPapers.html';
+                return; // exit the function to prevent further execution
+            }
             document.querySelector(".active-btn").classList.remove("active-btn");
             this.classList.add("active-btn");
             document.querySelector(".active").classList.remove("active");
             document.getElementById(button.dataset.id).classList.add("active");
-        })
+        });
     });
+
     document.querySelector(".theme-btn").addEventListener("click", () => {
         document.body.classList.toggle("light-mode");
-    })
+    });
 })();
 
 document.addEventListener('DOMContentLoaded', function () {
