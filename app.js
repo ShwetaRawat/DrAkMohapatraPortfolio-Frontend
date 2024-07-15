@@ -33,6 +33,3 @@ document.addEventListener('DOMContentLoaded', function () {
     toggleText();//call text immediately
     setInterval(toggleText, 1400);//alternate
 })
-
-
-
