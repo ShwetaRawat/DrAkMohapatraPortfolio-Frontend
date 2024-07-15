@@ -95,6 +95,7 @@ a {
 
 
 /* Apply color scheme */
+
 table {
   border-collapse: collapse;
   width: 100%;
@@ -104,13 +105,13 @@ table {
 th,
 td {
   border: 1px solid var(--border-color);
-  padding: 12px;
+  padding: 8px;
   text-align: left;
 }
 /* Apply color and size to table content */
 td {
-  color: white; /* Text color */
-  font-size: 20px; /* Font size */
+  color: white; 
+  /* font-size: 20px;  */
 }
 
 
@@ -118,13 +119,13 @@ th {
   background-color: var(--primary-color);
   color: white;
   font-weight: bold;
-  font-size: 35px;
+  /* font-size: 35px; */
 }
 
 
 
 #searchBox {
-  width: 20%;
+  width: 2;
   padding: 10px;
   margin-bottom: 20px;
 }
@@ -137,10 +138,10 @@ th {
 }
 
 /* Adjust width of Title and Author(s) columns */
-th:nth-child(1), /* Title column */
-th:nth-child(2) { /* Author(s) column */
-  width: 100%; /* Adjust width as needed */
-}
+/*th:nth-child(1), 
+th:nth-child(2) {
+  width: 100%; 
+}*/
 
 
 .bg-text {
